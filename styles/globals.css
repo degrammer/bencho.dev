@@ -3,8 +3,8 @@
   --main-text-focus-color: #3e3c3c;
   --main-hero-bg-color: #f2efef;
   --main-text-hover-color: rgb(241, 207, 248);
-  --main-text-hover-border-color:rgb(235, 10, 44);
-  --header-h:50px; 
+  --main-text-hover-border-color: rgb(235, 10, 44);
+  --header-h: 50px;
 }
 
 body {
@@ -100,7 +100,6 @@ nav ul {
   flex: 1;
 }
 
-
 footer {
   margin-top: 10px;
   padding: 2px;
@@ -186,64 +185,59 @@ main {
   text-shadow: 0px 0px #00000000; /* Safari fix */
 }
 
-
 .card-icons {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 10px;
-    font-size: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  font-size: 1rem;
 }
 
-.card-icon  {
-    box-shadow: 2px 2px 2px 2px #c3c3cc;
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
+.card-icon {
+  box-shadow: 2px 2px 2px 2px #c3c3cc;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
 }
 
 .card-icon .logo img {
-    max-height: 30px;
+  max-height: 30px;
 }
 
 .photo img {
-   
-    height: 350px;
-    border-radius: 100%;
-    margin: 10px;
-    box-shadow: 2px 2px 10px 3px #c3c3cc;
-
+  height: 350px;
+  border-radius: 100%;
+  margin: 10px;
+  box-shadow: 2px 2px 10px 3px #c3c3cc;
 }
 
 .particle {
-    position: absolute;
-    top: 100px;
-    right: 60px;
-    z-index: -1;
-    width: 450px;
-    height: 450px;
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  z-index: -1;
+  width: 450px;
+  height: 450px;
 }
 
 .blog-post {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .blog-post span {
-    color: #c3c3cc;
+  color: #c3c3cc;
 }
 
-@media screen and (max-width: 1200px) { 
-    .particle {
-        position: absolute;
-        right: -40px;
-        z-index: -1;
-        top: -250px;
-    }
+@media screen and (max-width: 1200px) {
+  .particle {
+    position: absolute;
+    right: -40px;
+    z-index: -1;
+    top: -250px;
+  }
 }
-
 
 @media screen and (max-width: 900px) {
-
   .test {
     height: 300px;
     width: 300px;
@@ -280,115 +274,112 @@ main {
     line-height: 1.5rem;
   }
 
-    .hero {
-      flex-direction: column;
-    }
-  
-    .hero-text {
-      order: 2;
-      font-size: 1.5rem;
-    }
-  
-    .zen-animation {
-      order: 1;
-    }
-  
-    .profile .name {
-      font-size: 2rem;
-    }
-
-
-    .photo img  {
-        height: 100px;
-    }
-
-
-    .about {
-        display: inherit;
-        position: relative;
-    }
-
-    .photo img {
-        position: absolute;
-        right: 0;
-        top: -110px;
-    }    
-    
-    .particle {
-        position: absolute;
-        top: -450px;
-        right: -140px;
-        z-index: -1;
-    }
-
+  .hero {
+    flex-direction: column;
   }
 
-  svg {
-    height: 80px;
+  .hero-text {
+    order: 2;
+    font-size: 1.5rem;
+  }
+
+  .zen-animation {
+    order: 1;
+  }
+
+  .profile .name {
+    font-size: 2rem;
+  }
+
+  .photo img {
+    height: 100px;
+  }
+
+  .about {
+    display: inherit;
+    position: relative;
+  }
+
+  .photo img {
     position: absolute;
-    width: 80px;
+    right: 0;
+    top: -110px;
   }
 
-  .hamb-menu {
+  .particle {
     position: absolute;
-    right: 0px;
-    top: 0px;
+    top: -487px;
+    right: -9px;
+    z-index: -1;
   }
- 
-  .plate {
-    height: 80px;
-    width: 80px;
-  }
-  .burger {
-    filter: url(#hamburguer-menu);
-  }
-  .x {
-    transform: scale(0);
-    transition: transform 400ms;
-  }
-  .line {
-    fill: none;
-    stroke: #d518c5;
-    stroke-width: 6px;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    transform-origin: 50%;
-    transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
-  }
-  .x .line {
-    stroke-width: 5.5px;
-  }
-  
-  /* Die vierte teller */
-  .plate4 .x {
-    transition: transform 400ms;
-  }
-  .plate4 .line {
-    transform-origin: 50%;
-    transition: transform 400ms 100ms;
-  }
-  .active.plate4 .line {
-    transition: transform 400ms;
-  }
-  .active.plate4 .line1 {
-    transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(.7);
-  }
-  .active.plate4 .line2 {
-    transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(.7);
-  }
-  .active.plate4 .line3 {
-    transform: translateY(0px) rotate(45deg) scale(.7);
-  }
-  .active.plate4 .line4 {
-    transform: translateY(0px) rotate(-45deg) scale(.7);
-  }
-  .active.plate4 .line5 {
-    transform: translateX(18px) translateY(3px) rotate(45deg) scale(.7);
-  }
-  .active.plate4 .line6 {
-    transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(.7);
-  }
-  .active.plate4 .x {
-    transition: transform 400ms 100ms;
-    transform: scale(1);
-  }
+}
+
+svg {
+  height: 80px;
+  position: absolute;
+  width: 80px;
+}
+
+.hamb-menu {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.plate {
+  height: 80px;
+  width: 80px;
+}
+.burger {
+  filter: url(#hamburguer-menu);
+}
+.x {
+  transform: scale(0);
+  transition: transform 400ms;
+}
+.line {
+  fill: none;
+  stroke: #d518c5;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform-origin: 50%;
+  transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+}
+.x .line {
+  stroke-width: 5.5px;
+}
+
+/* Die vierte teller */
+.plate4 .x {
+  transition: transform 400ms;
+}
+.plate4 .line {
+  transform-origin: 50%;
+  transition: transform 400ms 100ms;
+}
+.active.plate4 .line {
+  transition: transform 400ms;
+}
+.active.plate4 .line1 {
+  transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(0.7);
+}
+.active.plate4 .line2 {
+  transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(0.7);
+}
+.active.plate4 .line3 {
+  transform: translateY(0px) rotate(45deg) scale(0.7);
+}
+.active.plate4 .line4 {
+  transform: translateY(0px) rotate(-45deg) scale(0.7);
+}
+.active.plate4 .line5 {
+  transform: translateX(18px) translateY(3px) rotate(45deg) scale(0.7);
+}
+.active.plate4 .line6 {
+  transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(0.7);
+}
+.active.plate4 .x {
+  transition: transform 400ms 100ms;
+  transform: scale(1);
+}
