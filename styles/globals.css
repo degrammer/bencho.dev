@@ -259,6 +259,10 @@ main {
     margin-left: 2rem;
   }
 
+  .opened-menu .logo-container {
+    margin-left: 0px;
+  }
+
 
   .opened-menu ul {
     visibility: visible;
