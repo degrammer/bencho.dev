@@ -1,38 +1,394 @@
-html,
+:root {
+  --main-text-color: #908c8c;
+  --main-text-focus-color: #3e3c3c;
+  --main-hero-bg-color: #f2efef;
+  --main-text-hover-color: rgb(241, 207, 248);
+  --main-text-hover-border-color:rgb(235, 10, 44);
+  --header-h:50px; 
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'roboto', serif;
+  font-size: 16px;
+  color: var(--main-text-focus-color);
+  padding: 0px;
+  margin: 0px;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: var(--main-text-color);
+  cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
+ul li {
+  list-style: none;
+  margin-right: 20px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+header {
+  padding: 5px;
+  position: sticky;
+  top: 0px;
+  background: linear-gradient(45deg, #ebebeb, #fee2fd 100%);
+  width: 100%;
+  z-index: 1000;
+  height: var(--header-h);
 }
 
-h1,
-h2,
-p,
-ul {
+nav {
+  width: 300px;
+  position: sticky;
+  margin: 20px 0 0 20px;
+}
+
+nav ul li a {
+  padding: 2px;
+}
+
+nav ul li a:hover {
+  background-color: var(--main-text-hover-color);
+  color: var(--main-text-focus-color);
+  font-style: italic;
+  border-bottom: solid 5px var(--main-text-hover-border-color);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.logo-container {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+.logo-container span:nth-child(2) {
+  font-weight: bold;
+  color: var(--main-text-focus-color);
+}
+
+.test {
+  height: 600px;
+  width: 600px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: var(--main-hero-bg-color);
+}
+
+.hero-text {
+  flex: 3;
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #09009f, #eb12ce 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000; /* Safari fix */
+}
+
+.zen-animation {
+  grid-area: animation;
+  flex: 1;
+}
+
+
+footer {
+  margin-top: 10px;
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  align-items: baseline;
+  background-color: #f3f3f3;
+}
+
+.social a {
+  margin: 5px;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+
+footer .copy {
+  padding: 10px;
+  border-right: solid 1px var(--main-text-color);
+}
+
+main {
+  padding: 10px;
+  margin: 10px;
+  border-bottom: solid 1px var(--main-text-color);
+}
+
+.posts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  box-shadow: 2px 3px 10px 1px #d1cfcf;
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card:hover {
+  background-color: var(--main-text-hover-color);
+  cursor: pointer;
+}
+
+.card-image {
+  background: url('/deno.webp');
+  background-position: 50%;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-image-container {
+  height: 192px;
+  max-height: 192px;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.not-found-container {
+  height: 500px;
+  padding: 0;
   margin: 0;
 }
 
-ul {
-  padding: 0;
-  list-style: none;
+.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+.profile .name {
+  background: linear-gradient(45deg, #00ff0a, #53dfe9 80%);
+  font-size: 3rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000; /* Safari fix */
 }
+
+
+.card-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.card-icon  {
+    box-shadow: 2px 2px 2px 2px #c3c3cc;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card-icon .logo img {
+    max-height: 30px;
+}
+
+.photo img {
+   
+    height: 350px;
+    border-radius: 100%;
+    margin: 10px;
+    box-shadow: 2px 2px 10px 3px #c3c3cc;
+
+}
+
+.particle {
+    position: absolute;
+    top: 100px;
+    right: 60px;
+    z-index: -1;
+    width: 450px;
+    height: 450px;
+}
+
+.blog-post {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blog-post span {
+    color: #c3c3cc;
+}
+
+@media screen and (max-width: 1200px) { 
+    .particle {
+        position: absolute;
+        right: -40px;
+        z-index: -1;
+        top: -250px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+  .test {
+    height: 300px;
+    width: 300px;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  nav ul {
+    visibility: hidden;
+  }
+
+  .logo-container {
+    visibility: visible;
+  }
+
+  .opened-menu ul {
+    visibility: visible;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    align-content: stretch;
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 1px 4px 4px 0px #c3c3c3;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0.9;
+  }
+
+  .opened-menu ul li {
+    line-height: 1.5rem;
+  }
+
+    .hero {
+      flex-direction: column;
+    }
+  
+    .hero-text {
+      order: 2;
+      font-size: 1.5rem;
+    }
+  
+    .zen-animation {
+      order: 1;
+    }
+  
+    .profile .name {
+      font-size: 2rem;
+    }
+
+
+    .photo img  {
+        height: 100px;
+    }
+
+
+    .about {
+        display: inherit;
+        position: relative;
+    }
+
+    .photo img {
+        position: absolute;
+        right: 0;
+        top: -110px;
+    }    
+    
+    .particle {
+        position: absolute;
+        top: -450px;
+        right: -140px;
+        z-index: -1;
+    }
+
+  }
+
+  svg {
+    height: 80px;
+    position: absolute;
+    width: 80px;
+  }
+
+  .hamb-menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+ 
+  .plate {
+    height: 80px;
+    width: 80px;
+  }
+  .burger {
+    filter: url(#hamburguer-menu);
+  }
+  .x {
+    transform: scale(0);
+    transition: transform 400ms;
+  }
+  .line {
+    fill: none;
+    stroke: #d518c5;
+    stroke-width: 6px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform-origin: 50%;
+    transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+  }
+  .x .line {
+    stroke-width: 5.5px;
+  }
+  
+  /* Die vierte teller */
+  .plate4 .x {
+    transition: transform 400ms;
+  }
+  .plate4 .line {
+    transform-origin: 50%;
+    transition: transform 400ms 100ms;
+  }
+  .active.plate4 .line {
+    transition: transform 400ms;
+  }
+  .active.plate4 .line1 {
+    transform: translateX(18px) translateY(-3px) rotate(-45deg) scale(.7);
+  }
+  .active.plate4 .line2 {
+    transform: translateX(-18px) translateY(-3px) rotate(45deg) scale(.7);
+  }
+  .active.plate4 .line3 {
+    transform: translateY(0px) rotate(45deg) scale(.7);
+  }
+  .active.plate4 .line4 {
+    transform: translateY(0px) rotate(-45deg) scale(.7);
+  }
+  .active.plate4 .line5 {
+    transform: translateX(18px) translateY(3px) rotate(45deg) scale(.7);
+  }
+  .active.plate4 .line6 {
+    transform: translateX(-18px) translateY(3px) rotate(-45deg) scale(.7);
+  }
+  .active.plate4 .x {
+    transition: transform 400ms 100ms;
+    transform: scale(1);
+  }
