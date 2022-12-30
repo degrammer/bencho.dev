@@ -82,6 +82,7 @@ nav ul {
   align-items: center;
   text-align: center;
   background-color: var(--main-hero-bg-color);
+  margin-top: var(--header-h);
 }
 
 .hero-text {
