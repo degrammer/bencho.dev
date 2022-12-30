@@ -256,6 +256,7 @@ main {
 
   .logo-container {
     visibility: visible;
+    margin-left: 2rem;
   }
 
 
