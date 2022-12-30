@@ -28,7 +28,7 @@ ul li {
 
 header {
   padding: 5px;
-  position: sticky;
+  position: absolute;
   top: 0px;
   background: linear-gradient(45deg, #ebebeb, #fee2fd 100%);
   width: 100%;
@@ -38,7 +38,6 @@ header {
 
 nav {
   width: 300px;
-  position: sticky;
   margin: 20px 0 0 20px;
 }
 
@@ -247,6 +246,10 @@ main {
     display: block;
   }
 
+  nav {
+    margin: 0;
+  }
+
   nav ul {
     visibility: hidden;
   }
@@ -255,23 +258,28 @@ main {
     visibility: visible;
   }
 
+
   .opened-menu ul {
     visibility: visible;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    align-content: stretch;
-    padding: 10px;
+    align-content: center;
+    padding: 0;
     flex-wrap: wrap;
     background-color: #fff;
     box-shadow: 1px 4px 4px 0px #c3c3c3;
     border-radius: 0px 0px 10px 10px;
     opacity: 0.9;
+    height: 100vh;
+    width: 100vw;
+
   }
 
   .opened-menu ul li {
-    line-height: 1.5rem;
+    line-height: 5rem;
+    font-size: 3rem;
   }
 
   .hero {
@@ -324,6 +332,7 @@ svg {
   position: absolute;
   right: 0px;
   top: 0px;
+  z-index: 10000;
 }
 
 .plate {
