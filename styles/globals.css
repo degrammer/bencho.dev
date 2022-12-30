@@ -316,7 +316,7 @@ main {
     
     .particle {
         position: absolute;
-        top: -450px;
+        top: 0px;
         right: -140px;
         z-index: -1;
     }
