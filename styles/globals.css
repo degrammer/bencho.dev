@@ -125,7 +125,7 @@ footer .copy {
 
 main {
   padding: 10px;
-  margin: 10px;
+  margin: var(--header-h) 10px 0px 10px;
   border-bottom: solid 1px var(--main-text-color);
 }
 
@@ -298,10 +298,7 @@ main {
     font-size: 2rem;
   }
 
-  .photo img {
-    height: 100px;
-  }
-
+ 
   .about {
     display: inherit;
     position: relative;
@@ -310,7 +307,8 @@ main {
   .photo img {
     position: absolute;
     right: 0;
-    top: -110px;
+    top: -86px;
+    height: 100px;
   }
 
   .particle {
