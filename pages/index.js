@@ -4,6 +4,7 @@ import Footer from '../components/footer';
 export default function Home() {
   return (
     <>
+      <main>
       <div className="hero">
         <div className="hero-text">
           <h2>Developer Tools, Community Building, Tutorials, Full-Stack JavaScript, Personal Projects</h2>
@@ -19,9 +20,9 @@ export default function Home() {
           ></lottie-player>
         </div>
       </div>
-      <main>
-      <h2>Latest blog posts</h2>
-      <div className="posts-container">
+      <article>
+         <h2>Latest blog posts</h2>
+         <div className="posts-container">
         <div className="card">
           <div className="card-image-container">
             <div className="card-image"></div>
@@ -183,6 +184,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+      </article>
+     
       </main>
     </>
   );

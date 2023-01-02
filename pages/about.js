@@ -1,6 +1,7 @@
 export default function About() {
   return (
     <main>
+      <article>
       <h1>About me</h1>
       <div className="about">
         <div className="profile">
@@ -79,6 +80,7 @@ export default function About() {
           <img src="bencho.jpeg" />
         </div>
       </div>
+      </article>
     </main>
   );
 }

@@ -1,5 +1,6 @@
 export default function NotFound() {
   return (
+    <>
     <main className="not-found-container">
       <lottie-player
         src="https://assets2.lottiefiles.com/packages/lf20_PQVrLJyOsd.json"
@@ -9,5 +10,6 @@ export default function NotFound() {
         autoplay
       ></lottie-player>
     </main>
+    </>
   );
 }

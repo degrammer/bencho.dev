@@ -4,15 +4,17 @@
   --main-hero-bg-color: #f2efef;
   --main-text-hover-color: rgb(241, 207, 248);
   --main-text-hover-border-color: rgb(235, 10, 44);
-  --header-h: 50px;
+  --header-h: 80px;
 }
 
-body {
+body, html {
   font-family: 'roboto', serif;
   font-size: 16px;
   color: var(--main-text-focus-color);
   padding: 0px;
   margin: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 a {
@@ -28,7 +30,7 @@ ul li {
 
 header {
   padding: 5px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   background: linear-gradient(45deg, #ebebeb, #fee2fd 100%);
   width: 100%;
@@ -65,6 +67,9 @@ nav ul {
 .logo-container {
   font-size: 1.6rem;
   margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
 }
 
 .logo-container span:nth-child(2) {
@@ -102,11 +107,12 @@ nav ul {
 
 footer {
   margin-top: 10px;
-  padding: 2px;
+  padding: 1rem;
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
   align-items: baseline;
   background-color: #f3f3f3;
+  height: 100%;
 }
 
 .social a {
@@ -116,7 +122,7 @@ footer {
 .container {
   min-height: 100vh;
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 1fr auto;
 }
 
 footer .copy {
@@ -125,9 +131,12 @@ footer .copy {
 }
 
 main {
+  border-bottom: solid 1px var(--main-text-color);
+}
+
+article {
   padding: 10px;
   margin: var(--header-h) 10px 0px 10px;
-  border-bottom: solid 1px var(--main-text-color);
 }
 
 .posts-container {
@@ -260,10 +269,21 @@ main {
     margin-left: 2rem;
   }
 
+  .logo-container img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .opened-menu {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+
+  }
+
   .opened-menu .logo-container {
     margin-left: 0px;
   }
-
 
   .opened-menu ul {
     visibility: visible;
@@ -275,16 +295,16 @@ main {
     padding: 0;
     flex-wrap: wrap;
     background-color: #fff;
-    box-shadow: 1px 4px 4px 0px #c3c3c3;
-    border-radius: 0px 0px 10px 10px;
-    height: 100vh;
-    width: 100vw;
 
   }
 
   .opened-menu ul li {
     line-height: 5rem;
     font-size: 3rem;
+  }
+
+  .opened-menu  nav {
+    margin: 50% auto;
   }
 
   .hero {

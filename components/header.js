@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image'
 export default function Header() {
     const [isOpen, setIsOpen] = React.useState(false);
     const [isActive, setIsActive] = React.useState(false);
@@ -13,7 +14,7 @@ export default function Header() {
     };
 
   return (
-    <header>
+    <header className={ isOpen ? 'opened-menu' : ''}>
       <div className="hamb-menu mobile-only">
         <a onClick={onMobileMenuClick}>
           <svg>
@@ -48,9 +49,10 @@ export default function Header() {
           </div>
         </a>
       </div>
-      <nav className={ isOpen ? 'opened-menu' : ''}>
+      <nav>
         <ul>
           <li className="logo-container">
+            <Image src="benchologo.svg" width={80} height={80} alt="Bencho logo" />
             <a title="Navigate to home page" href="/">
               {' '}
               <span>bencho</span>
