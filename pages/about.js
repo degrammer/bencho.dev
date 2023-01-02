@@ -88,7 +88,8 @@ export default function About() {
 export async function getStaticProps(context) {
     return {
       props: {
-        title: 'bencho.dev | About me'
+        title: 'bencho.dev | About me',
+        description: 'About bencho.dev blog, technical articles about React, Next.js, VS Code Extensions, Node.js, Deno, OAuth 2.0, JavaScript'
       },
     }
   }

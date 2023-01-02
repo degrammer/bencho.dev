@@ -194,7 +194,8 @@ export default function Home() {
 export async function getStaticProps(context) {
   return {
     props: {
-      title: 'bencho.dev | Welcome'
+      title: 'bencho.dev | Welcome',
+      description: 'Welcome to bencho.dev blog, technical articles about React, Next.js, VS Code Extensions, Node.js, Deno, OAuth 2.0, JavaScript'
     },
   }
 }

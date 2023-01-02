@@ -9,11 +9,9 @@ export default function Footer() {
       </div>
       <div className="menu">
         <ul>
-          <li className="logo-container">
-            <a title="Navigate to home page" href="/">
-              {' '}
-              <span>bencho</span>
-              <span>.dev</span>{' '}
+        <li>
+            <a title="Go to main page" href="/">
+              home
             </a>
           </li>
           <li>
