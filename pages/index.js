@@ -25,26 +25,27 @@ export default function Home() {
          <div className="posts-container">
         <div className="card">
           <div className="card-image-container">
-            <div className="card-image"></div>
+            <div className="card-image" style={ { backgroundImage: "url('/emmet-blogpost.jpeg')"}}></div>
           </div>
           <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
+            <h3>Using Emmet Expressions in VS Code, a productivity boost</h3>
             <span>29 November 2022</span>
             <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
+            Emmet is a web-developer’s toolkit for boosting HTML & CSS code writing.
+
+With Emmet, you can type expressions (abbreviations) similar to CSS selectors and convert them into code fragment with a single keystroke
             </p>
-            <a href="#" title="Read more">
+            <a href="/vs-code-emmet-expressions" title="Read more">
               Read more
             </a>
           </div>
         </div>
         <div className="card">
           <div className="card-image-container">
-            <div className="card-image"></div>
+            <div className="card-image" style={ { backgroundImage: "url('/top-vscode-extensions.jpeg')"}}></div>
           </div>
           <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
+            <h3>Top Five VS Code extensions that will make you a more productive developer</h3>
             <span>29 November 2022</span>
             <p>
               Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
@@ -55,134 +56,7 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="card">
-          <div className="card-image-container">
-            <div className="card-image"></div>
-          </div>
-          <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
-            <span>29 November 2022</span>
-            <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
-            </p>
-            <a href="#" title="Read more">
-              Read more
-            </a>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image-container">
-            <div className="card-image"></div>
-          </div>
-          <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
-            <span>29 November 2022</span>
-            <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
-            </p>
-            <a href="#" title="Read more">
-              Read more
-            </a>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image-container">
-            <div className="card-image"></div>
-          </div>
-          <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
-            <span>29 November 2022</span>
-            <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
-            </p>
-            <a href="#" title="Read more">
-              Read more
-            </a>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image-container">
-            <div className="card-image"></div>
-          </div>
-          <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
-            <span>29 November 2022</span>
-            <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
-            </p>
-            <a href="#" title="Read more">
-              Read more
-            </a>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image-container">
-            <div className="card-image"></div>
-          </div>
-          <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
-            <span>29 November 2022</span>
-            <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
-            </p>
-            <a href="#" title="Read more">
-              Read more
-            </a>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image-container">
-            <div className="card-image"></div>
-          </div>
-          <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
-            <span>29 November 2022</span>
-            <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
-            </p>
-            <a href="#" title="Read more">
-              Read more
-            </a>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image-container">
-            <div className="card-image"></div>
-          </div>
-          <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
-            <span>29 November 2022</span>
-            <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
-            </p>
-            <a href="#" title="Read more">
-              Read more
-            </a>
-          </div>
-        </div>
-        <div className="card">
-          <div className="card-image-container">
-            <div className="card-image"></div>
-          </div>
-          <div className="card-body">
-            <h3>Five productivity VS Code extensions for Front End developers that will change the way you work.</h3>
-            <span>29 November 2022</span>
-            <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
-            </p>
-            <a href="#" title="Read more">
-              Read more
-            </a>
-          </div>
-        </div>
+        
       </div>
       </article>
      
