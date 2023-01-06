@@ -10,7 +10,12 @@ export default function Post() {
       <div className="article-header">
         <div className="card">
           <div className="card-image-container">
-            <div className="card-image" role="img" aria-labelledby="emmet-expressions-blog-post" style={{ backgroundImage: `url(${CARD_IMAGE})` }}></div>
+            <div
+              className="card-image"
+              role="img"
+              aria-labelledby="emmet-expressions-blog-post"
+              style={{ backgroundImage: `url(${CARD_IMAGE})` }}
+            ></div>
           </div>
         </div>
         <h1 id="emmet-expressions-blog-post">{PAGE_TITLE}</h1>
@@ -42,6 +47,7 @@ export default function Post() {
           typing and pressing the tab key or using light bulb suggestions.
         </p>
         <video autoPlay loop muted playsInline>
+          <source src="posts/emmet/try-catch.webm" type="video/webm" />
           <source src="posts/emmet/try-catch.mp4" type="video/mp4" />
         </video>
         <p>
@@ -95,8 +101,8 @@ export default function Post() {
             expression. To enable it, just click the information icon. The preview will be enabled by default after that
           </p>
           <video autoPlay loop muted playsInline>
-            <source src="posts/emmet/emmet-preview-enabled.mp4" type="video/mp4" />
             <source src="posts/emmet/emmet-preview-enabled.webm" type="video/webm" />
+            <source src="posts/emmet/emmet-preview-enabled.mp4" type="video/mp4" />
           </video>
         </div>
         <h2>Nesting operators</h2>
@@ -118,6 +124,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-child.webm" type="video/webm" />
                 <source src="posts/emmet/example-child.mp4" type="video/mp4" />
               </video>
             </div>
@@ -133,6 +140,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-sibling.webm" type="video/webm" />
                 <source src="posts/emmet/example-sibling.mp4" type="video/mp4" />
               </video>
             </div>
@@ -148,6 +156,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-climb-up.webm" type="video/webm" />
                 <source src="posts/emmet/example-climb-up.mp4" type="video/mp4" />
               </video>
             </div>
@@ -163,6 +172,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-climb-up-two-levels.webm" type="video/webm" />
                 <source src="posts/emmet/example-climb-up-two-levels.mp4" type="video/mp4" />
               </video>
             </div>
@@ -178,6 +188,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-multiplication.webm" type="video/webm" />
                 <source src="posts/emmet/example-multiplication.mp4" type="video/mp4" />
               </video>
             </div>
@@ -193,6 +204,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-multiplication-digits.webm" type="video/webm" />
                 <source src="posts/emmet/example-multiplication-digits.mp4" type="video/mp4" />
               </video>
             </div>
@@ -208,6 +220,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-multiplication-start.webm" type="video/webm" />
                 <source src="posts/emmet/example-multiplication-start.mp4" type="video/mp4" />
               </video>
             </div>
@@ -223,6 +236,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-multiplication-desc.webm" type="video/webm" />
                 <source src="posts/emmet/example-multiplication-desc.mp4" type="video/mp4" />
               </video>
             </div>
@@ -243,6 +257,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-numbering.webm" type="video/webm" />
                 <source src="posts/emmet/example-numbering.mp4" type="video/mp4" />
               </video>
             </div>
@@ -263,6 +278,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-numbering-placeholder.webm" type="video/webm" />
                 <source src="posts/emmet/example-numbering-placeholder.mp4" type="video/mp4" />
               </video>
             </div>
@@ -278,6 +294,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-numbering-placeholder.webm" type="video/webm" />
                 <source src="posts/emmet/example-numbering-placeholder.mp4" type="video/mp4" />
               </video>
             </div>
@@ -293,6 +310,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-grouping.webm" type="video/webm" />
                 <source src="posts/emmet/example-grouping.mp4" type="video/mp4" />
               </video>
             </div>
@@ -308,6 +326,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
+                <source src="posts/emmet/example-grouping-multiple.webm" type="video/webm" />
                 <source src="posts/emmet/example-grouping-multiple.mp4" type="video/mp4" />
               </video>
             </div>
@@ -322,7 +341,8 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
-                <source src="posts/emmet/test.mp4" type="video/mp4" />
+                <source src="posts/emmet/html-abbr.webm" type="video/webm" />
+                <source src="posts/emmet/html-abbr.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
