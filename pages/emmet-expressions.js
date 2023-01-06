@@ -322,7 +322,7 @@ export default function Post() {
               </div>
             </div>
             <div className="example">
-              <video autoPlay loop muted playsInline>
+              <video autoPlay loop muted playsInline controls>
                 <source src="posts/emmet/html-abbr.mp4" type="video/mp4" />
               </video>
             </div>
