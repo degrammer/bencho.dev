@@ -336,6 +336,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       title: PAGE_TITLE,
+      pageName: 'emmet-expressions',
       description:
         'Learn how to use Emmet expressions, a web-developer’s toolkit for boosting HTML & CSS code writing. With Emmet, you can type expressions (abbreviations) similar to CSS selectors and convert them into code fragment with a single keystroke',
       ogImage: CARD_IMAGE,
