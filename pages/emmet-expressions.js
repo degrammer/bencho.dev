@@ -10,10 +10,10 @@ export default function Post() {
       <div className="article-header">
         <div className="card">
           <div className="card-image-container">
-            <div className="card-image" style={{ backgroundImage: `url(${CARD_IMAGE})` }}></div>
+            <div className="card-image" role="img" aria-labelledby="emmet-expressions-blog-post" style={{ backgroundImage: `url(${CARD_IMAGE})` }}></div>
           </div>
         </div>
-        <h1>{PAGE_TITLE}</h1>
+        <h1 id="emmet-expressions-blog-post">{PAGE_TITLE}</h1>
       </div>
       <article>
         <p>
@@ -64,7 +64,8 @@ export default function Post() {
             src={snippetExample}
             height={581}
             width={476}
-            alt="Example of using try catch code snippet"
+            alt="Example of using try catch code snippet with VS Code"
+            aria-label="Example of using try catch code snippet with VS Code"
           />
           <div>
             <p>

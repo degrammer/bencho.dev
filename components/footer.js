@@ -7,7 +7,7 @@ export default function Footer() {
         <br />
         All Rights Reserved. Animations by LottieFiles.
       </div>
-      <div className="menu">
+      <div className="menu" role="navigation" aria-label="Footer menu navigation">
         <ul>
         <li>
             <a title="Go to main page" href="/">

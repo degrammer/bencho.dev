@@ -49,28 +49,28 @@ export default function Header() {
           </div>
         </a>
       </div>
-      <nav>
+      <nav aria-label="Top navigation menu">
         <ul>
           <li className="logo-container">
-            <Image src="benchologo.svg" width={80} height={80} alt="Bencho logo" />
-            <a title="Navigate to home page" href="/">
+            <Image src="benchologo.svg" width={80} height={80} alt="bencho.dev logo" />
+            <a title="Navigate to home page" href="/" tabIndex="0">
               {' '}
               <span>bencho</span>
               <span>.dev</span>{' '}
             </a>
           </li>
           <li>
-            <a title="Read blog posts" href="#">
+            <a title="Read blog posts" href="#" tabIndex="1">
               posts
             </a>
           </li>
           <li>
-            <a title="Check out my personal projects / ideas" href="#">
+            <a title="Check out my personal projects / ideas" href="#" tabIndex="2">
               projects
             </a>
           </li>
           <li>
-            <a title="Lets get in touch, learn more about me" href="/about">
+            <a title="Lets get in touch, learn more about me" href="/about" tabIndex="3">
               about
             </a>
           </li>

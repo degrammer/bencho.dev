@@ -27,24 +27,25 @@ export default function Home() {
          <div className="posts-container">
         <div className="card">
           <div className="card-image-container">
-            <div className="card-image" style={ { backgroundImage: "url('/emmet-blogpost.webp')"}}></div>
+            <div className="card-image" role="img"  aria-label="Image describing how Emmet expressions can be a productivity boost in VS Code" style={ { backgroundImage: "url('/emmet-blogpost.webp')"}}></div>
           </div>
           <div className="card-body">
-            <h3>Using Emmet Expressions in VS Code, a productivity boost</h3>
+            <h3>
+            <a href="/emmet-expressions" title="Read more about using Emmet expressions in VS Code, a productivity boost">
+            Using Emmet expressions in VS Code, a productivity boost
+            </a>
+              </h3>
             <span>06 January 2023</span>
             <p>
             Emmet is a web-developer’s toolkit for boosting HTML & CSS code writing.
 
 With Emmet, you can type expressions (abbreviations) similar to CSS selectors and convert them into code fragment with a single keystroke
             </p>
-            <a href="/emmet-expressions" title="Read more">
-              Read more
-            </a>
           </div>
         </div>
         <div className="card">
           <div className="card-image-container">
-            <div className="card-image" style={ { backgroundImage: "url('/top-vscode-extensions.webp')"}}></div>
+            <div className="card-image" role="img" aria-label="Image describing the recommended VS Code extensions" style={ { backgroundImage: "url('/top-vscode-extensions.webp')"}}></div>
           </div>
           <div className="card-body">
             <h3>Top Five VS Code extensions that will make you a more productive developer</h3>

@@ -1,5 +1,5 @@
 :root {
-  --main-text-color: #908c8c;
+  --main-text-color: #413f3f;
   --main-text-focus-color: #3e3c3c;
   --main-hero-bg-color: #f2efef;
   --main-text-hover-color: rgb(241, 207, 248);
@@ -165,8 +165,12 @@ article {
 
 .card:hover {
   background-color: var(--main-text-hover-color);
-  cursor: pointer;
   opacity: 0.8;
+}
+
+.card h3 a:hover {
+  cursor: pointer;
+  color: rgb(211, 21, 217);
 }
 
 .card-image {
@@ -247,119 +251,6 @@ article {
   color: #c3c3cc;
 }
 
-@media screen and (max-width: 1200px) {
-  .particle {
-    position: absolute;
-    right: -40px;
-    z-index: -1;
-    top: -250px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-
-  video {
-    max-width: 800px;
-    height: 100%;
-    width: 100%;
-  }
-
-  .lateral {
-    flex-direction: column;
-  }
-
-
-  .mobile-only {
-    display: block;
-  }
-
-  nav {
-    margin: 0;
-  }
-
-  nav ul {
-    visibility: hidden;
-  }
-
-  .logo-container {
-    visibility: visible;
-    margin-left: 3rem;
-  }
-
-  .logo-container img {
-    height: 40px;
-    width: 40px;
-  }
-
-  .opened-menu {
-    height: 100%;
-    width: 100%;
-    background: #fff;
-  }
-
-  .opened-menu .logo-container {
-    margin-left: 0px;
-  }
-
-  .opened-menu ul {
-    visibility: visible;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
-    padding: 0;
-    flex-wrap: wrap;
-    background-color: #fff;
-  }
-
-  .opened-menu ul li {
-    line-height: 5rem;
-    font-size: 3rem;
-  }
-
-  .opened-menu nav {
-    margin: 50% auto;
-  }
-
-  .hero {
-    flex-direction: column;
-  }
-
-  .hero-text {
-    order: 2;
-    font-size: 1.5rem;
-  }
-
-  .zen-animation {
-    order: 1;
-  }
-
-  .profile .name {
-    font-size: 2rem;
-  }
-
-  .about {
-    display: inherit;
-    position: relative;
-  }
-
-  .photo img {
-    position: absolute;
-    right: 0;
-    top: -86px;
-    max-height: 100px;
-    max-width: 100px;
-  }
-
-  .particle {
-    position: absolute;
-    top: -487px;
-    right: -9px;
-    z-index: -1;
-  }
-}
-
 svg {
   height: 80px;
   position: absolute;
@@ -431,8 +322,9 @@ svg {
   transform: scale(1);
 }
 
-.article-header {
-  margin-top: var(--header-h);
+.article-header  {
+  max-width: 60%;
+  margin: calc(var(--header-h) + 3%) auto 0 auto;
 }
 
 .posts-content {
@@ -543,4 +435,141 @@ h2 {
 
 .lateral div {
   flex:3;
+}
+
+footer .menu ul {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .menu a {
+  display: block;
+}
+
+footer .menu a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  .particle {
+    position: absolute;
+    right: -40px;
+    z-index: -1;
+    top: -250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  footer .menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .article-header {
+    max-width: 100%;
+    margin: var(--header-h) auto 0 auto;
+  }
+
+  video {
+    max-width: 800px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .lateral {
+    flex-direction: column;
+  }
+
+
+  .mobile-only {
+    display: block;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav ul {
+    visibility: hidden;
+  }
+
+  .logo-container {
+    visibility: visible;
+    margin-left: 3rem;
+  }
+
+  .logo-container img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .opened-menu {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+  }
+
+  .opened-menu .logo-container {
+    margin-left: 0px;
+  }
+
+  .opened-menu ul {
+    visibility: visible;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    background-color: #fff;
+  }
+
+  .opened-menu ul li {
+    line-height: 5rem;
+    font-size: 3rem;
+  }
+
+  .opened-menu nav {
+    margin: 50% auto;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    order: 2;
+    font-size: 1.5rem;
+  }
+
+  .zen-animation {
+    order: 1;
+  }
+
+  .profile .name {
+    font-size: 2rem;
+  }
+
+  .about {
+    display: inherit;
+    position: relative;
+  }
+
+  .photo img {
+    position: absolute;
+    right: 0;
+    top: -86px;
+    max-height: 100px;
+    max-width: 100px;
+  }
+
+  .particle {
+    position: absolute;
+    top: -487px;
+    right: -9px;
+    z-index: -1;
+  }
 }
