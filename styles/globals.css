@@ -7,7 +7,9 @@
   --header-h: 80px;
 }
 
-body, html {
+
+body,
+html {
   font-family: 'roboto', serif;
   font-size: 16px;
   color: var(--main-text-focus-color);
@@ -50,7 +52,6 @@ nav ul li a {
 nav ul li a:hover {
   background-color: var(--main-text-hover-color);
   color: var(--main-text-focus-color);
-  font-style: italic;
   border-bottom: solid 5px var(--main-text-hover-border-color);
 }
 
@@ -77,7 +78,7 @@ nav ul {
   color: var(--main-text-focus-color);
 }
 
-.test {
+.hero-container {
   height: 600px;
   width: 600px;
 }
@@ -136,13 +137,21 @@ main {
 
 article {
   padding: 10px;
-  margin: var(--header-h) 10px 0px 10px;
+  margin-top: var(--header-h);
+}
+
+.middle-section {
+  padding: 10px;
 }
 
 .posts-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
+}
+
+.posts-container article {
+  margin-top: 0px;
 }
 
 .card {
@@ -157,6 +166,7 @@ article {
 .card:hover {
   background-color: var(--main-text-hover-color);
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .card-image {
@@ -212,7 +222,8 @@ article {
 }
 
 .photo img {
-  height: 350px;
+  max-height: 350px;
+  max-width: 350px;
   border-radius: 100%;
   margin: 10px;
   box-shadow: 2px 2px 10px 3px #c3c3cc;
@@ -246,10 +257,15 @@ article {
 }
 
 @media screen and (max-width: 900px) {
-  .test {
-    height: 300px;
-    width: 300px;
+
+  video {
+    max-width: 800px;
   }
+
+  .lateral {
+    flex-direction: column;
+  }
+
 
   .mobile-only {
     display: block;
@@ -277,7 +293,6 @@ article {
     height: 100%;
     width: 100%;
     background: #fff;
-
   }
 
   .opened-menu .logo-container {
@@ -294,7 +309,6 @@ article {
     padding: 0;
     flex-wrap: wrap;
     background-color: #fff;
-
   }
 
   .opened-menu ul li {
@@ -302,7 +316,7 @@ article {
     font-size: 3rem;
   }
 
-  .opened-menu  nav {
+  .opened-menu nav {
     margin: 50% auto;
   }
 
@@ -323,7 +337,6 @@ article {
     font-size: 2rem;
   }
 
- 
   .about {
     display: inherit;
     position: relative;
@@ -333,7 +346,8 @@ article {
     position: absolute;
     right: 0;
     top: -86px;
-    height: 100px;
+    max-height: 100px;
+    max-width: 100px;
   }
 
   .particle {
@@ -413,4 +427,118 @@ svg {
 .active.plate4 .x {
   transition: transform 400ms 100ms;
   transform: scale(1);
+}
+
+.article-header {
+  margin-top: var(--header-h);
+}
+
+.posts-content {
+  margin: 2rem;
+}
+
+.article-header .card-image-container {
+  border-radius: 10px;
+}
+
+.post-content article {
+  margin: 3rem;
+  text-align: justify;
+  padding: 0px;
+}
+
+.post-content article::first-letter {
+  font-size: 3rem;
+  color: #eb12ce;
+  font-weight: bold;
+}
+
+.post-content h1,
+h2 {
+  background: linear-gradient(45deg, #09009f, #eb12ce 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000; /* Safari fix */
+}
+
+.post-content h1 {
+  text-align: center;
+}
+
+.emmet-expression {
+  background: linear-gradient(45deg, #070707, #565055 80%);
+  padding: 1rem;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.post-content img {
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.emmet-tool {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(514px, 1fr));
+  grid-gap: 10px;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.syntax-item {
+  box-shadow: 2px 3px 10px 1px #d1cfcf;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #272822;
+  color: white;
+  overflow-x: scroll;
+}
+
+.syntax-item img {
+  max-width: 514px;
+}
+
+.syntax-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.name h1 {
+  text-align: left;
+  background: linear-gradient(45deg, #40ed10, #b7edce 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000; /* Safari fix */
+}
+
+.symbol {
+  height: 100%;
+  font-size: 5rem;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(45deg, #09009f, #12eb89 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000; /* Safari fix */
+}
+
+.lateral {
+  display: flex;
+  gap: 2rem;
+}
+
+.lateral img {
+  flex: 2;
+}
+
+.lateral div {
+  flex:3;
 }

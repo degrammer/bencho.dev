@@ -1,5 +1,13 @@
-export default function About() {
+import Head from "next/head";
+import Image from "next/image";
+import bencho from "../public/bencho.webp";
+
+export default function About() { 
   return (
+    <>
+    <Head>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    </Head>
     <main>
       <article>
       <h1>About me</h1>
@@ -77,11 +85,12 @@ export default function About() {
             loop
             autoplay
           ></lottie-player>
-          <img src="bencho.jpeg" />
+          <Image src={bencho} alt="Bencho profile picture" />
         </div>
       </div>
       </article>
     </main>
+    </>
   );
 }
 

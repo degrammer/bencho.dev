@@ -3,7 +3,6 @@ import Footer from './footer';
 import Header from './header';
 
 export default function Layout({ children, title, description, ogImage }) {
-  const defaultImage = `${process.env.BASE_PATH}/bot.png`;
   return (
     <>
       <Head>
@@ -11,7 +10,7 @@ export default function Layout({ children, title, description, ogImage }) {
         <meta name="description" content={description} />
         <meta property="og:title" content={description} key="title" />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content={ogImage || defaultImage} />
+        <meta property="og:image" content={`${process.env.BASE_PATH}/${ogImage}`} />
       </Head>
       <div className="container">
         <Header />
