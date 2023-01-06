@@ -311,7 +311,6 @@ export default function Post() {
               </video>
             </div>
           </div>
-
           <div className="syntax-item">
             <div className="syntax-header">
               <div className="symbol">{'!'}</div>
@@ -322,7 +321,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
-                <source src="posts/emmet/html-abbr.mp4" type="video/mp4" />
+                <source src="posts/emmet/test.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
