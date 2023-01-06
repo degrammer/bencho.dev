@@ -94,8 +94,6 @@ export default function Post() {
             expression. To enable it, just click the information icon. The preview will be enabled by default after that
           </p>
           <video autoPlay loop muted playsInline controls>
-            <source src="posts/emmet/emmet-preview-enabled.mp4" type="video/mp4" />
-            <source src="posts/emmet/emmet-preview-enabled.webm" type="video/webm" />
             <source src="posts/emmet/emmet-preview-enabled.mov" type="video/mov" />
           </video>
         </div>
