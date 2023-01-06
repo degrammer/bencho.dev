@@ -95,6 +95,7 @@ export default function Post() {
           </p>
           <video autoPlay loop muted playsInline>
             <source src="posts/emmet/emmet-preview-enabled.mp4" type="video/mp4" />
+            <source src="posts/emmet/emmet-preview-enabled.webm" type="video/webm" />
           </video>
         </div>
         <h2>Nesting operators</h2>
@@ -276,7 +277,7 @@ export default function Post() {
             </div>
             <div className="example">
               <video autoPlay loop muted playsInline>
-                <source src="posts/emmet/example-numbering-placeholder..mp4" type="video/mp4" />
+                <source src="posts/emmet/example-numbering-placeholder.mp4" type="video/mp4" />
               </video>
             </div>
           </div>
