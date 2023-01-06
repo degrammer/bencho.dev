@@ -8,7 +8,7 @@ export default function Layout({ children, title, description, ogImage }) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta property="og:title" content={description} key="title" />
+        <meta property="og:title" content={title} key="title" />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={`https://${process.env.VERCEL_URL}/${ogImage}`} />
       </Head>
