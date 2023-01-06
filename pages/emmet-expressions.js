@@ -96,6 +96,7 @@ export default function Post() {
           <video autoPlay loop muted playsInline>
             <source src="posts/emmet/emmet-preview-enabled.mp4" type="video/mp4" />
             <source src="posts/emmet/emmet-preview-enabled.webm" type="video/webm" />
+            <source src="posts/emmet/emmet-preview-enabled.mov" type="video/mov" />
           </video>
         </div>
         <h2>Nesting operators</h2>
