@@ -260,6 +260,9 @@ article {
 
   video {
     max-width: 800px;
+    height: 200px;
+    width: 200px;
+    background-color: red;
   }
 
   .lateral {
