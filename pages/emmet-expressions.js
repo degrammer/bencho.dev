@@ -93,8 +93,8 @@ export default function Post() {
             If you have the suggestion documentation fly-out enabled, you will see a preview of the result of the Emmet
             expression. To enable it, just click the information icon. The preview will be enabled by default after that
           </p>
-          <video autoPlay loop muted playsInline controls>
-            <source src="posts/emmet/test.mp4" type="video/mp4" />
+          <video autoPlay loop muted playsInline>
+            <source src="posts/emmet/emmet-preview-enabled.mp4" type="video/mp4" />
           </video>
         </div>
         <h2>Nesting operators</h2>
@@ -320,7 +320,7 @@ export default function Post() {
               </div>
             </div>
             <div className="example">
-              <video autoPlay loop muted playsInline controls>
+              <video autoPlay loop muted playsInline>
                 <source src="posts/emmet/html-abbr.mp4" type="video/mp4" />
               </video>
             </div>
