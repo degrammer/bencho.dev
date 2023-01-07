@@ -30,9 +30,10 @@ export default function Card() {
                   </a>
                 </div>
 
-                <p>Or you can send me an email to <a href="mailto:contact@bencho.dev">contact at bencho.dev</a> </p>
-                
+              
               </div>
+              <p>Or you can send me an email to <a href="mailto:contact@bencho.dev">contact at bencho.dev</a> </p>
+                
             </div>
             
 
