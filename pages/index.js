@@ -48,15 +48,11 @@ With Emmet, you can type expressions (abbreviations) similar to CSS selectors an
             <div className="card-image" role="img" aria-label="Image describing the recommended VS Code extensions" style={ { backgroundImage: "url('/top-vscode-extensions.webp')"}}></div>
           </div>
           <div className="card-body">
-            <h3>Top Five VS Code extensions that will make you a more productive developer</h3>
+            <h3>Top VS Code extensions that will make you a more productive developer</h3>
             <span>06 January 2023</span>
             <p>
-              Stop copy pasting markup, learn how to use this vscode extensions that will change the way you work for
-              ever.
+             Coming soon
             </p>
-            <a href="#" title="Read more">
-              Read more
-            </a>
           </div>
         </div>
         </div>
