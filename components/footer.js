@@ -9,7 +9,7 @@ export default function Footer() {
       </div>
       <div className="menu" role="navigation" aria-label="Footer menu navigation">
         <ul>
-        <li>
+          <li>
             <a title="Go to main page" href="/">
               home
             </a>
@@ -32,11 +32,15 @@ export default function Footer() {
         </ul>
       </div>
       <div className="social">
-        <a href="#" title="Follow me on Twitter">
-          <img role="image" width="30px" height="30px" src="twitter.svg" alt="Follow me on Twitter" />
+        <a href="https://www.linkedin.com/in/rubenrestrepo/" target="_blank" title="Connect with me on LinkedIn">
+          <div className="logo-card logo-linkedin"></div>
         </a>
-        <a href="#" title="Follow me on GitHub">
-          <img role="image" width="30px" height="30px" src="github.svg" alt="Follow me on GitHub" />
+
+        <a href="https://twitter.com/degrammer" target="_blank" title="Follow me on Twitter">
+          <div className="logo-card logo-twitter"></div>
+        </a>
+        <a href="https://github.com/degrammer" target="_blank" title="Follow me on GitHub">
+          <div className="logo-card logo-github"></div>
         </a>
       </div>
     </footer>

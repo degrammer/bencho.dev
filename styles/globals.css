@@ -116,8 +116,11 @@ footer {
   height: 100%;
 }
 
-.social a {
-  margin: 5px;
+.social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -572,4 +575,56 @@ footer .menu a:hover {
     right: -9px;
     z-index: -1;
   }
+}
+
+.card-icon .logo-card {
+  margin: 0 auto;
+}
+
+.logo-card {
+	background: transparent url('/logos.svg');
+  height: 34px;
+  width: 30px;
+}
+
+.logo-nextjs {
+  background-position: 0px 0px;
+}
+
+.logo-javascript {
+  background-position: -158px 0px;
+}
+
+.logo-vscode {
+  background-position: -125px 0px;
+}
+
+.logo-github {
+  background-position: -189px 0px;
+}
+
+.logo-oauth {
+  background-position: -32px 0px;
+}
+
+.logo-nodejs {
+  background-position: -94px 0px;
+}
+
+.logo-deno {
+  background-position: -221px 0px;
+}
+
+.logo-react {
+  background-position: -64px 0px;
+}
+
+.logo-linkedin {
+  background-position: -285px 0px;
+}
+
+.logo-twitter {
+  background-position: -252px 0px;
+  height: 36px;
+  width: 33px;
 }
