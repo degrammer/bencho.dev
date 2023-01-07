@@ -82,7 +82,7 @@ export default function About() {
 export async function getStaticProps(context) {
   return {
     props: {
-      pageName: '/',
+      pageName: 'about',
       ogImage: 'bot.png',
       title: 'bencho.dev | About me',
       description:

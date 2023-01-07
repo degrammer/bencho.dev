@@ -42,7 +42,7 @@ header {
 
 nav {
   width: 300px;
-  margin: 20px 0 0 20px;
+  margin: 20px 0 0 60px;
 }
 
 nav ul li a {
@@ -453,6 +453,71 @@ footer .menu a:hover {
   text-decoration: underline;
 }
 
+.card-icon .logo-card {
+  margin: 0 auto;
+}
+
+.logo-card {
+	background: transparent url('/logos.svg');
+  height: 34px;
+  width: 30px;
+}
+
+.logo-nextjs {
+  background-position: 0px 0px;
+}
+
+.logo-javascript {
+  background-position: -158px 0px;
+}
+
+.logo-vscode {
+  background-position: -125px 0px;
+}
+
+.logo-github {
+  background-position: -189px 0px;
+}
+
+.logo-oauth {
+  background-position: -32px 0px;
+}
+
+.logo-nodejs {
+  background-position: -94px 0px;
+}
+
+.logo-deno {
+  background-position: -221px 0px;
+}
+
+.logo-react {
+  background-position: -64px 0px;
+}
+
+.logo-linkedin {
+  background-position: -285px 0px;
+}
+
+.logo-twitter {
+  background-position: -252px 0px;
+  height: 36px;
+  width: 33px;
+}
+
+.social-card {
+  margin-top: calc(25vh);
+  padding: 2rem;
+}
+
+.social-card .card-icons {
+  grid-template-columns: 1fr 1fr;
+}
+
+.social-card .particle {
+  top: 250px;
+}
+
 @media screen and (max-width: 1200px) {
   .particle {
     position: absolute;
@@ -569,62 +634,10 @@ footer .menu a:hover {
     max-width: 100px;
   }
 
-  .particle {
+  .particle, .social-card .particle {
     position: absolute;
     top: -487px;
     right: -9px;
     z-index: -1;
   }
-}
-
-.card-icon .logo-card {
-  margin: 0 auto;
-}
-
-.logo-card {
-	background: transparent url('/logos.svg');
-  height: 34px;
-  width: 30px;
-}
-
-.logo-nextjs {
-  background-position: 0px 0px;
-}
-
-.logo-javascript {
-  background-position: -158px 0px;
-}
-
-.logo-vscode {
-  background-position: -125px 0px;
-}
-
-.logo-github {
-  background-position: -189px 0px;
-}
-
-.logo-oauth {
-  background-position: -32px 0px;
-}
-
-.logo-nodejs {
-  background-position: -94px 0px;
-}
-
-.logo-deno {
-  background-position: -221px 0px;
-}
-
-.logo-react {
-  background-position: -64px 0px;
-}
-
-.logo-linkedin {
-  background-position: -285px 0px;
-}
-
-.logo-twitter {
-  background-position: -252px 0px;
-  height: 36px;
-  width: 33px;
 }

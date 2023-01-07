@@ -70,8 +70,13 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a title="Lets get in touch, learn more about me" href="/about" tabIndex="3">
+            <a title="Learn more about me" href="/about" tabIndex="3">
               about
+            </a>
+          </li>
+          <li>
+            <a title="Lets get in touch, contact me" href="/contact" tabIndex="4">
+              contact
             </a>
           </li>
         </ul>

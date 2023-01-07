@@ -25,22 +25,27 @@ export default function Footer() {
             </a>
           </li>
           <li>
-            <a title="Lets get in touch, learn more about me" href="about">
+            <a title="Learn more about me" href="about">
               about
+            </a>
+          </li>
+          <li>
+            <a title="Lets get in touch, contact me" href="/contact" tabIndex="4">
+              contact
             </a>
           </li>
         </ul>
       </div>
       <div className="social">
         <a href="https://www.linkedin.com/in/rubenrestrepo/" target="_blank" title="Connect with me on LinkedIn">
-          <div className="logo-card logo-linkedin"></div>
+          <div role="img" className="logo-card logo-linkedin"></div>
         </a>
 
         <a href="https://twitter.com/degrammer" target="_blank" title="Follow me on Twitter">
-          <div className="logo-card logo-twitter"></div>
+          <div role="img" className="logo-card logo-twitter"></div>
         </a>
         <a href="https://github.com/degrammer" target="_blank" title="Follow me on GitHub">
-          <div className="logo-card logo-github"></div>
+          <div role="img" className="logo-card logo-github"></div>
         </a>
       </div>
     </footer>

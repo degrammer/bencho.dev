@@ -70,7 +70,9 @@ export async function getStaticProps(context) {
   return {
     props: {
       title: 'bencho.dev | Welcome',
-      description: 'Welcome to bencho.dev blog, technical articles about React, Next.js, VS Code Extensions, Node.js, Deno, OAuth 2.0, JavaScript',
+      description: 'Welcome to bencho.dev blog, developer tools, community building, tutorials, full-stack javascript, personal projects',
+      pageName: '',
+      ogImage: 'bot.png',
     },
   }
 }
