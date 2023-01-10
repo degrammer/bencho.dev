@@ -25,6 +25,19 @@ export default function Home() {
       <div className="middle-section">
       <h2>Latest blog posts</h2>
          <div className="posts-container">
+         <div className="card">
+          <div className="card-image-container">
+            <div className="card-image" role="img" aria-label="Image describing the recommended VS Code extensions" style={ { backgroundImage: "url('/joining-stateful.webp')"}}></div>
+          </div>
+          <div className="card-body">
+            <h3><a href="/stateful" title="Read more about using Emmet expressions in VS Code, a productivity boost">I'm joining Stateful!</a></h3>
+            <span>10 January 2023</span>
+            <p>
+             Read about why I'm leaving my position at Fusebit and decided to join Stateful,
+             a developer tools focused company.
+            </p>
+          </div>
+        </div>
         <div className="card">
           <div className="card-image-container">
             <div className="card-image" role="img"  aria-label="Image describing how Emmet expressions can be a productivity boost in VS Code" style={ { backgroundImage: "url('/emmet-blogpost.webp')"}}></div>
@@ -43,16 +56,14 @@ With Emmet, you can type expressions (abbreviations) similar to CSS selectors an
             </p>
           </div>
         </div>
+        
         <div className="card">
           <div className="card-image-container">
             <div className="card-image" role="img" aria-label="Image describing the recommended VS Code extensions" style={ { backgroundImage: "url('/top-vscode-extensions.webp')"}}></div>
           </div>
           <div className="card-body">
             <h3>Top VS Code extensions that will make you a more productive developer</h3>
-            <span>06 January 2023</span>
-            <p>
-             Coming soon
-            </p>
+            <span>Coming soon</span>
           </div>
         </div>
         </div>
