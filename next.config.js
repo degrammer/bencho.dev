@@ -6,6 +6,11 @@ module.exports = {
         destination: 'vscode://stateful.runme?command=setup&repository=git@github.com:degrammer/runme-getting-started.git&fileToOpen=README.md',
         permanent: true,
       },
+      {
+        source: '/open-project/:repository/:file',
+        destination: 'vscode://stateful.runme?command=setup&repository=:repository&fileToOpen=:file',
+        permanent: true,
+      },
     ]
   },
 }
