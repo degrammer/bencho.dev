@@ -3,8 +3,9 @@ module.exports = {
     return [
       {
         source: '/runme-getting-started',
-        destination: 'vscode%3A%2F%2Fstateful.runme?command=setup&repository=git@github.com:degrammer/runme-getting-started.git&fileToOpen=README.md',
+        destination: 'vscode://stateful.runme?command=setup&repository=git@github.com:degrammer/runme-getting-started.git&fileToOpen=README.md',
         permanent: true,
+        basePath: false,
       },
       {
         source: '/open-project/:repository/:file',
