@@ -1,4 +1,4 @@
 export default function handler(req, res) {
-    res.end(JSON.stringify(req.query))
-    //res.redirect(308, 'vscode://stateful.runme?command=setup&repository=git@github.com:degrammer/runme-getting-started.git&fileToOpen=README.md')
+    const { repository, file } = req.query
+    res.redirect(308, `vscode://stateful.runme?command=setup&repository=${repository}&fileToOpen=${file || 'README.md'}`)
   }
